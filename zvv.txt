@@ -1,0 +1,4 @@
+<?php 
+                    while($row = $result->fetch_assoc()) { ?>
+                    <option value="<?php echo $row['$slot_id'] ?>"><?php echo $row['$slot_id'] ?> - <?php echo $row['slot_name'] ?> </option>
+                    <?php } ?>

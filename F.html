@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<script>
+			function findCentigrade(){
+				var fahrenheit = document.getElementById("fahrenheit").value;
+				var centigrade;
+					centigrade = (fahrenheit - 32) * 5/9;
+					alert(centigrade)
+			}
+		</script>
+	</head>
+	<body>
+		<h2>Enter Fahrenheit Value</h2>
+		<input type="text" id="fahrenheit" />
+		<button onclick="findCentigrade()" >Convert to Centigrades</button>
+	</body>
+</html>
