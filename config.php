@@ -127,7 +127,7 @@ if(count($errors) == 0)
 $sql="INSERT INTO customer (cus_index,name,nic,barcode,dob,address,telephone,vehicle_no,training_type,license_no,vehicle_class,lic_issued_date,medical_no,med_issued_date,special_notes) VALUES ('$indexno','$name','$nic','$barcode','$dob','$address','$telephone','$vehicle_class','$training_type','$licence_no','$vehicle_class2','$issued_date','$medical_no','$medi_issued_date','test')";
 mysqli_query($db, $sql);
 
-header('location:user_account.php');
+header('location:add_user.php');
 }
 }
 
@@ -150,7 +150,7 @@ $userid = ($_GET['user_id']);
 $user_delete_qry="DELETE FROM users WHERE user_id = $userid;";
 mysqli_query($db, $user_delete_qry);
 
-header("Location: user_account.php");
+header("Location: add_user.php");
 }
 
 // Add Slots to DB
